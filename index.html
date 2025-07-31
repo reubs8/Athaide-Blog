@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Athaide Family Blog and Travel Journal - Follow Reuben, Prema, Megan, Jordan, and Daniel as they share their stories, travels, and adventures.">
+  <title>Athaide Family Blog and Travel Journal</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Base Mobile-First Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background-color: #34495e;
+      transform: scale(1.05);
+    }
+
+    nav a:active {
+      background-color: #1abc9c;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    .top-row, .bottom-row {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .blog {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog:hover,
+    .blog:focus-within {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .blog img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .blog img:hover {
+      transform: scale(1.05);
+    }
+
+    .blog a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #2980b9;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .blog a:hover,
+    .blog a:focus {
+      color: #1abc9c;
+    }
+
+    .blog a:active {
+      color: #16a085;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Tablet breakpoint */
+    @media (min-width: 600px) {
+      .top-row, .bottom-row {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .blog {
+        flex: 1 1 250px;
+      }
+    }
+
+    /* Desktop breakpoint */
+    @media (min-width: 992px) {
+      nav ul {
+        justify-content: space-evenly;
+      }
+
+      .top-row, .bottom-row {
+        gap: 2rem;
+      }
+
+      .blog {
+        max-width: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="margin: 0 auto; text-align: center;">Athaide Family Blog and Travel Journal</h1>
+    <nav>
+      <ul>
+        <li><a href="#reuben">Reuben</a></li>
+        <li><a href="#prema">Prema</a></li>
+        <li><a href="#megan">Megan</a></li>
+        <li><a href="#jordan">Jordan</a></li>
+        <li><a href="#daniel">Daniel</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="top-row">
+      <section id="reuben" class="blog">
+        <article>
+          <h2>Reuben's Blog</h2>
+          <a href="#"><img src="reuben.jpg" alt="Reuben's travel photo"></a>
+          <p><a href="reuben-post.html">Read Reuben's latest post</a></p>
+        </article>
+      </section>
+
+      <section id="prema" class="blog">
+        <article>
+          <h2>Prema's Blog</h2>
+          <a href="#"><img src="prema.jpg" alt="Prema's travel photo"></a>
+          <p><a href=prema-post.html>Read Prema's latest post</a></p>
+        </article>
+      </section>
+
+      <section id="megan" class="blog">
+        <article>
+          <h2>Megan's Blog</h2>
+          <a href="#"><img src="megan.jpg" alt="Megan's travel photo"></a>
+          <p><a href=megan-post.html>Read Megan's latest post</a></p>
+        </article>
+      </section>
+    </div>
+
+    <div class="bottom-row">
+      <section id="jordan" class="blog">
+        <article>
+          <h2>Jordan's Blog</h2>
+          <a href="#"><img src="jordan.jpg" alt="Jordan's travel photo"></a>
+          <p><a href=jordan-post.html>Read Jordan's latest post</a></p>
+        </article>
+      </section>
+
+      <section id="daniel" class="blog">
+        <article>
+          <h2>Daniel's Blog</h2>
+          <a href="#"><img src="daniel.jpg" alt="Daniel's travel photo"></a>
+          <p><a href=daniel-post.html>Read Daniel's latest post</a></p>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Athaide Family. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
